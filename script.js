@@ -2,7 +2,7 @@
 
 const SITE_CONFIG = {
   // Add digits only, including country code. Example: "994501234567"
-  whatsappNumber: "",
+  whatsappNumber: "994709070602",
   // Add a real form endpoint when available. The endpoint must accept JSON.
   formEndpoint: "",
   instagramUrl: "",
