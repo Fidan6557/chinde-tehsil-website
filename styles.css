@@ -1719,6 +1719,13 @@ ol {
   font-size: 0.72rem;
 }
 
+.form-status a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
+}
+
 .form-status.is-error {
   color: #76232a;
   background: #fbebeb;

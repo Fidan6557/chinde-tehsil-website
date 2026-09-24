@@ -248,9 +248,23 @@ async function submitConsultation(event) {
     const whatsappNumber = SITE_CONFIG.whatsappNumber.replace(/\D/g, "");
     if (whatsappNumber) {
       const message = buildWhatsappFormMessage(data);
-      window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
-      formStatus.textContent = "Məlumatlarınız WhatsApp-a yönləndirildi. Mesajı orada təsdiqləyib göndərin.";
+      const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+      const whatsappWindow = window.open(whatsappUrl, "_blank");
+
+      formStatus.textContent = "WhatsApp açılır. Açılmadısa ";
+      const fallbackLink = document.createElement("a");
+      fallbackLink.href = whatsappUrl;
+      fallbackLink.target = "_blank";
+      fallbackLink.rel = "noopener noreferrer";
+      fallbackLink.textContent = "buraya klikləyin";
+      formStatus.append(fallbackLink, ".");
       formStatus.hidden = false;
+
+      if (whatsappWindow) {
+        whatsappWindow.opener = null;
+      } else {
+        window.location.assign(whatsappUrl);
+      }
       return;
     }
 
