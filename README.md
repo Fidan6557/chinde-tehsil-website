@@ -14,9 +14,10 @@ Then open `http://localhost:4173`.
 
 ## Required production configuration
 
-Edit `SITE_CONFIG` at the top of `script.js` and add verified company information:
+The consultation flow and every WhatsApp CTA currently use the verified number `+994 77 389 34 81`. Edit `SITE_CONFIG` at the top of `script.js` when contact details change:
 
-- `whatsappNumber`: digits only, including country code (for example `994501234567`)
+- `whatsappNumber`: digits only, including country code
+- `whatsappDisplay`: human-readable phone number
 - `formEndpoint`: optional HTTPS endpoint accepting JSON form submissions
 - `instagramUrl`
 - `email`
@@ -27,10 +28,10 @@ WhatsApp controls and empty footer fields stay hidden until real values are supp
 ## Content to add later
 
 - Original brand logo files (SVG preferred)
-- Verified phone, social, email and office address
+- Verified social, email and office address
 - Real student acceptance results or letters with publication consent
 - Verified university catalog data
-- Production domain for the canonical URL and absolute Open Graph image URL
+- Custom production domain and absolute Open Graph image URL
 
 ## Image credit
 

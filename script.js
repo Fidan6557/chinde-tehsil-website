@@ -2,7 +2,8 @@
 
 const SITE_CONFIG = {
   // Add digits only, including country code. Example: "994501234567"
-  whatsappNumber: "994709070602",
+  whatsappNumber: "994773893481",
+  whatsappDisplay: "+994 77 389 34 81",
   // Add a real form endpoint when available. The endpoint must accept JSON.
   formEndpoint: "",
   instagramUrl: "",
@@ -29,6 +30,7 @@ function closeMenu() {
   menuToggle?.setAttribute("aria-expanded", "false");
   menuToggle?.setAttribute("aria-label", "Menyunu aç");
   mobileMenu?.setAttribute("aria-hidden", "true");
+  mobileMenu?.setAttribute("inert", "");
   mobileMenu?.classList.remove("is-open");
   header?.classList.remove("menu-active");
   document.body.classList.remove("menu-open");
@@ -41,6 +43,7 @@ function toggleMenu() {
   menuToggle?.setAttribute("aria-expanded", String(!isOpen));
   menuToggle?.setAttribute("aria-label", isOpen ? "Menyunu aç" : "Menyunu bağla");
   mobileMenu?.setAttribute("aria-hidden", String(isOpen));
+  mobileMenu?.toggleAttribute("inert", isOpen);
   mobileMenu?.classList.toggle("is-open", !isOpen);
   header?.classList.toggle("menu-active", !isOpen);
   document.body.classList.toggle("menu-open", !isOpen);
@@ -75,6 +78,10 @@ function configureContactLinks() {
     link.href = whatsappUrl;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
+  });
+
+  document.querySelectorAll("[data-whatsapp-number]").forEach((element) => {
+    element.textContent = SITE_CONFIG.whatsappDisplay;
   });
 
   document.querySelectorAll("[data-requires-whatsapp]").forEach((element) => {
@@ -276,7 +283,7 @@ async function submitConsultation(event) {
     formStatus.hidden = false;
   } finally {
     submitButton.removeAttribute("aria-busy");
-    buttonLabel.textContent = "Müraciət göndər";
+    buttonLabel.textContent = "WhatsApp-da göndər";
   }
 }
 
