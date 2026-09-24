@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#071b33" />
+    <meta
+      name="description"
+      content="Çində bakalavr, magistr və təqaüd imkanları üçün universitet seçimi, sənəd hazırlığı və müraciət dəstəyi."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:locale" content="az_AZ" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Çində Təhsil" />
+    <meta property="og:title" content="Çində Təhsil — Çində ali təhsil üçün doğru istiqamət" />
+    <meta
+      property="og:description"
+      content="Profilinizə uyğun universitet, təqaüd və müraciət planını birlikdə müəyyənləşdirək."
+    />
+    <meta property="og:image" content="assets/hero-campus.webp" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Çində Təhsil — Universitet və təqaüd müraciətləri</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Əsas məzmuna keç</a>
+
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Çində Təhsil — ana səhifə">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img">
+              <path d="M13 15.5 24 9l11 6.5v13L24 35l-11-6.5z" />
+              <path d="M18.2 20.3 24 17l5.8 3.3v6.6L24 30.2l-5.8-3.3z" />
+              <path d="M24 9v8m0 13.2V35M13 15.5l5.2 4.8m11.6 6.6L35 28.5" />
+            </svg>
+          </span>
+          <span class="brand-copy">
+            <strong>Çində Təhsil</strong>
+            <small>Education consulting</small>
+          </span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Əsas naviqasiya">
+          <a href="#services">Xidmətlər</a>
+          <a href="#scholarships">Təqaüdlər</a>
+          <a href="#universities">Universitetlər</a>
+          <a href="#process">Qəbul prosesi</a>
+          <a href="#about">Haqqımızda</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <button class="button button-small header-cta" type="button" data-open-consultation>
+          Pulsuz konsultasiya
+        </button>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Menyunu aç"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+          data-menu-toggle
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true">
+        <nav aria-label="Mobil naviqasiya">
+          <a href="#services">Xidmətlər <span aria-hidden="true">↗</span></a>
+          <a href="#scholarships">Təqaüdlər <span aria-hidden="true">↗</span></a>
+          <a href="#universities">Universitetlər <span aria-hidden="true">↗</span></a>
+          <a href="#process">Qəbul prosesi <span aria-hidden="true">↗</span></a>
+          <a href="#about">Haqqımızda <span aria-hidden="true">↗</span></a>
+          <a href="#faq">FAQ <span aria-hidden="true">↗</span></a>
+        </nav>
+        <button class="button button-block" type="button" data-open-consultation>
+          Pulsuz konsultasiya al
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-pattern" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span></span> Azərbaycandan Çinə təhsil yolu</p>
+            <h1 id="hero-title">Çində təhsil yolunu <em>inamla</em> başla.</h1>
+            <p class="hero-lead">
+              Universitet seçimindən sənədlərin hazırlanmasına qədər müraciətin hər
+              mərhələsini sizin profilinizə uyğun, aydın planla idarə edirik.
+            </p>
+            <div class="hero-actions">
+              <button class="button" type="button" data-open-consultation>
+                Pulsuz konsultasiya al
+                <svg aria-hidden="true" viewBox="0 0 20 20"><path d="m7 4 6 6-6 6" /></svg>
+              </button>
+              <a class="text-link" href="#universities">
+                Universitet seçiminə bax
+                <span aria-hidden="true">↘</span>
+              </a>
+            </div>
+            <ul class="hero-proof" aria-label="Xidmət üstünlükləri">
+              <li>Aydın yol xəritəsi</li>
+              <li>Profilə uyğun seçim</li>
+              <li>Mərhələli dəstək</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual reveal reveal-delay" aria-label="Çin universitet şəhərciyində tələbə">
+            <div class="hero-image-wrap">
+              <img
+                src="assets/hero-campus.webp"
+                alt="Müasir Çin universitet şəhərciyində azərbaycanlı tələbə"
+                width="1120"
+                height="1400"
+                fetchpriority="high"
+              />
+              <div class="image-caption">
+                <span>01</span>
+                <p>Doğru universitet<br />doğru profildən başlayır.</p>
+              </div>
+            </div>
+            <aside class="hero-plan" aria-label="Müraciət planı">
+              <div class="plan-heading">
+                <span>Müraciət planı</span>
+                <span class="status-dot">Fərdi</span>
+              </div>
+              <ol>
+                <li><span>01</span> Profil və hədəflər</li>
+                <li><span>02</span> Universitet və təqaüd</li>
+                <li><span>03</span> Sənədlər və müraciət</li>
+              </ol>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Xidmət istiqamətləri">
+        <div class="container trust-list">
+          <span class="trust-intro">Bir məqsəd, tam dəstək</span>
+          <span>Bakalavr</span>
+          <span>Magistr</span>
+          <span>Təqaüd imkanları</span>
+          <span>Sənəd dəstəyi</span>
+        </div>
+      </section>
+
+      <section class="section why" aria-labelledby="why-title">
+        <div class="container">
+          <div class="section-intro split-intro reveal">
+            <div>
+              <p class="eyebrow"><span></span> Niyə Çin?</p>
+              <h2 id="why-title">Təhsildən daha böyük bir perspektiv.</h2>
+            </div>
+            <p>
+              Çin sürətlə inkişaf edən akademik mühiti, beynəlxalq proqramları və
+              texnologiya ekosistemi ilə tələbələrə fərqli karyera yolları açır.
+            </p>
+          </div>
+
+          <div class="why-grid">
+            <article class="why-feature reveal">
+              <div class="feature-number">01</div>
+              <div>
+                <h3>Güclü akademik mühit</h3>
+                <p>
+                  Müxtəlif ixtisaslar üzrə ingilis və Çin dilində proqramları
+                  hədəflərinizə uyğun araşdırırıq.
+                </p>
+              </div>
+            </article>
+            <article class="why-feature reveal">
+              <div class="feature-number">02</div>
+              <div>
+                <h3>Təqaüd imkanları</h3>
+                <p>
+                  Uyğunluq şərtlərini müqayisə edir, real müraciət strategiyası
+                  qurmağa kömək edirik.
+                </p>
+              </div>
+            </article>
+            <article class="why-feature reveal">
+              <div class="feature-number">03</div>
+              <div>
+                <h3>Beynəlxalq karyera</h3>
+                <p>
+                  Qlobal şəbəkə, yeni dil və mədəniyyət təcrübəsi ilə gələcəyə daha
+                  geniş baxış qazanın.
+                </p>
+              </div>
+            </article>
+            <article class="why-feature reveal">
+              <div class="feature-number">04</div>
+              <div>
+                <h3>İnnovasiya mərkəzi</h3>
+                <p>
+                  Mühəndislik, biznes, tibb və texnologiya sahələrində dinamik
+                  təhsil ekosistemini kəşf edin.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="services" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section-intro reveal">
+            <p class="eyebrow light"><span></span> Xidmətlər</p>
+            <h2 id="services-title">Biz sizə necə kömək edirik?</h2>
+            <p>
+              Hər tələbə üçün eyni siyahı yox, profilə və məqsədə uyğun fərdi
+              müraciət planı hazırlayırıq.
+            </p>
+          </div>
+
+          <div class="service-list">
+            <article class="service-item reveal">
+              <span class="service-index">01</span>
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6" /><path d="m16 16 4 4M11 8v6m-3-3h6" /></svg>
+              </div>
+              <div>
+                <h3>Universitet seçimi</h3>
+                <p>Akademik göstəricilər, büdcə, ixtisas və şəhər seçiminə uyğun variantların araşdırılması.</p>
+              </div>
+            </article>
+            <article class="service-item reveal">
+              <span class="service-index">02</span>
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 8.5 12 4l8 4.5-8 4.5zM7 11v5.5c2.8 2 7.2 2 10 0V11M20 9v6" /></svg>
+              </div>
+              <div>
+                <h3>Təqaüd seçimi</h3>
+                <p>Profilinizə uyğun dövlət və universitet təqaüdlərinin şərtlərinin müqayisəsi.</p>
+              </div>
+            </article>
+            <article class="service-item reveal">
+              <span class="service-index">03</span>
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6zM15 3v5h4M9 12h7M9 16h5" /></svg>
+              </div>
+              <div>
+                <h3>Sənədlərin hazırlanması</h3>
+                <p>Tələb olunan sənədlər, formalar və təqdimat ardıcıllığı üzrə dəqiq istiqamətləndirmə.</p>
+              </div>
+            </article>
+            <article class="service-item reveal">
+              <span class="service-index">04</span>
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="m4 12 15-7-5 15-3-6zM11 14l4-4" /></svg>
+              </div>
+              <div>
+                <h3>Müraciətin edilməsi</h3>
+                <p>Universitet platformalarında müraciətin düzgün və vaxtında tamamlanmasına dəstək.</p>
+              </div>
+            </article>
+            <article class="service-item reveal">
+              <span class="service-index">05</span>
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M5 13c0-4 3-7 7-7s7 3 7 7v5H5zM8 18v2m8-2v2M8 6V3m8 3V3" /></svg>
+              </div>
+              <div>
+                <h3>Qəbul sonrası dəstək</h3>
+                <p>Qəbul cavabından sonra növbəti sənədlər və hazırlıq mərhələləri üçün yol xəritəsi.</p>
+              </div>
+            </article>
+            <article class="service-item reveal">
+              <span class="service-index">06</span>
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 5h16v12H8l-4 4zM8 9h8m-8 4h5" /></svg>
+              </div>
+              <div>
+                <h3>Fərdi konsultasiya</h3>
+                <p>Suallarınıza konkret cavablar və növbəti addımlar üçün şəffaf, real plan.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section scholarships" id="scholarships" aria-labelledby="scholarship-title">
+        <div class="container scholarship-grid">
+          <div class="scholarship-copy reveal">
+            <p class="eyebrow"><span></span> Təqaüdlər</p>
+            <h2 id="scholarship-title">Təqaüd sadəcə axtarış deyil — uyğunluq məsələsidir.</h2>
+            <p>
+              Akademik nəticələrinizi, dil biliklərinizi və proqram tələblərini
+              birlikdə qiymətləndirərək uyğun ola biləcəyiniz imkanları müəyyənləşdiririk.
+            </p>
+            <button class="button" type="button" data-open-consultation>
+              Təqaüd imkanlarını öyrən
+              <svg aria-hidden="true" viewBox="0 0 20 20"><path d="m7 4 6 6-6 6" /></svg>
+            </button>
+          </div>
+
+          <div class="scholarship-options reveal">
+            <article>
+              <span>01</span>
+              <div>
+                <h3>CSC təqaüdü</h3>
+                <p>Dövlət təqaüd proqramının uyğunluq və sənəd tələblərinin qiymətləndirilməsi.</p>
+              </div>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" /></svg>
+            </article>
+            <article>
+              <span>02</span>
+              <div>
+                <h3>Universitet təqaüdləri</h3>
+                <p>Universitetlərin təqdim etdiyi imkanların proqram və qəbul dövrünə görə araşdırılması.</p>
+              </div>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" /></svg>
+            </article>
+            <article>
+              <span>03</span>
+              <div>
+                <h3>Digər maliyyə imkanları</h3>
+                <p>Mövcud olduqda ikitərəfli proqramlar və təhsil haqqı endirimlərinin nəzərdən keçirilməsi.</p>
+              </div>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" /></svg>
+            </article>
+            <p class="scholarship-note">
+              <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm0-9v5m0-8v.5" /></svg>
+              Təqaüd nəticəsi universitet və proqramın qərarından asılıdır; əvvəlcədən zəmanət verilmir.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section universities" id="universities" aria-labelledby="universities-title">
+        <div class="container">
+          <div class="section-intro split-intro reveal">
+            <div>
+              <p class="eyebrow"><span></span> Universitet seçimi</p>
+              <h2 id="universities-title">Adlara yox, sizə uyğun olana baxırıq.</h2>
+            </div>
+            <p>
+              Kataloqdan təsadüfi seçim əvəzinə, qəbul şansınızı və təhsil hədəfinizi
+              nəzərə alan qısa siyahı qururuq.
+            </p>
+          </div>
+
+          <div class="discovery-board reveal">
+            <div class="discovery-map" aria-hidden="true">
+              <svg viewBox="0 0 700 440" role="img">
+                <path d="M86 92c58-51 118-37 171-64 58-29 117 23 176 19 66-4 92 43 132 73 42 31 78 69 54 110-20 34-81 38-110 71-33 38-46 95-104 105-55 9-79-50-130-58-55-9-111 29-155-6-42-33-23-89-56-126-34-39-25-87 22-124Z" />
+                <circle cx="475" cy="120" r="9" />
+                <circle cx="525" cy="215" r="9" />
+                <circle cx="456" cy="275" r="9" />
+                <circle cx="380" cy="225" r="9" />
+                <path class="map-route" d="M380 225c45 7 53 46 76 50 35 6 75-24 69-60-6-38-55-38-50-95" />
+              </svg>
+              <div class="map-label label-beijing"><span></span>Pekin</div>
+              <div class="map-label label-shanghai"><span></span>Şanxay</div>
+              <div class="map-label label-hangzhou"><span></span>Hangzhou</div>
+              <div class="map-label label-wuhan"><span></span>Wuhan</div>
+            </div>
+
+            <div class="discovery-panel">
+              <span class="panel-kicker">Fərdi universitet xəritəniz</span>
+              <h3>Seçimi 4 meyarla dəqiqləşdiririk</h3>
+              <ul>
+                <li><span>01</span> İxtisas və təhsil səviyyəsi</li>
+                <li><span>02</span> Akademik göstəricilər</li>
+                <li><span>03</span> Dil və büdcə</li>
+                <li><span>04</span> Şəhər və kampus gözləntisi</li>
+              </ul>
+              <button class="text-button" type="button" data-open-consultation>
+                Mənə uyğun variantları öyrən <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+          <p class="university-disclaimer">
+            Universitet seçimi müraciət dövründə açıq proqramlar və rəsmi qəbul şərtləri əsasında aparılır.
+          </p>
+        </div>
+      </section>
+
+      <section class="section process" id="process" aria-labelledby="process-title">
+        <div class="container">
+          <div class="section-intro process-intro reveal">
+            <p class="eyebrow"><span></span> Qəbul prosesi</p>
+            <h2 id="process-title">Növbəti addım həmişə aydın olsun.</h2>
+            <p>Müraciəti qarışıq sənəd yığınından izlənə bilən prosesə çeviririk.</p>
+          </div>
+
+          <ol class="timeline">
+            <li class="reveal">
+              <span class="timeline-number">01</span>
+              <div><h3>Konsultasiya</h3><p>Məqsədinizi və ilkin suallarınızı dinləyirik.</p></div>
+            </li>
+            <li class="reveal">
+              <span class="timeline-number">02</span>
+              <div><h3>Profil analizi</h3><p>Təhsil tarixçəsi, dil və büdcə qiymətləndirilir.</p></div>
+            </li>
+            <li class="reveal">
+              <span class="timeline-number">03</span>
+              <div><h3>Proqram seçimi</h3><p>Uyğun universitet və proqram siyahısı qurulur.</p></div>
+            </li>
+            <li class="reveal">
+              <span class="timeline-number">04</span>
+              <div><h3>Sənədlər</h3><p>Tələblər yoxlanılır, sənədlər hazırlanır.</p></div>
+            </li>
+            <li class="reveal">
+              <span class="timeline-number">05</span>
+              <div><h3>Müraciət</h3><p>Ərizələr düzgün kanallarla təqdim edilir.</p></div>
+            </li>
+            <li class="reveal">
+              <span class="timeline-number">06</span>
+              <div><h3>Növbəti mərhələ</h3><p>Qəbul cavabı və sonrakı addımlar planlanır.</p></div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <div class="about-heading reveal">
+            <p class="eyebrow light"><span></span> Haqqımızda</p>
+            <h2 id="about-title">Qərar sizin, yol xəritəsi birlikdə.</h2>
+          </div>
+          <div class="about-copy reveal">
+            <p class="about-lead">
+              Çində Təhsil, azərbaycanlı tələbələrə Çin universitetlərinə müraciət
+              prosesini daha aydın və idarəolunan etmək üçün fərdi istiqamət verir.
+            </p>
+            <p>
+              Məqsədimiz “hamıya eyni variant” təqdim etmək deyil. Profilinizi
+              dinləyir, rəsmi tələbləri müqayisə edir və qərar verə bilməyiniz üçün
+              hər mərhələni sadə dildə izah edirik.
+            </p>
+            <div class="commitments">
+              <div><span>01</span><strong>Fərdi yanaşma</strong><small>Profilə uyğun seçim</small></div>
+              <div><span>02</span><strong>Şəffaf proses</strong><small>Aydın mərhələlər</small></div>
+              <div><span>03</span><strong>Real istiqamət</strong><small>Zəmanətsiz, dürüst yanaşma</small></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Verified student results can be rendered here from real data when supplied. -->
+      <template id="results-template">
+        <section class="section results" aria-labelledby="results-title">
+          <div class="container">
+            <p class="eyebrow"><span></span> Real nəticələr</p>
+            <h2 id="results-title">Tələbələrimizin nəticələri</h2>
+            <div data-results-list></div>
+          </div>
+        </section>
+      </template>
+
+      <section class="section faq" id="faq" aria-labelledby="faq-title">
+        <div class="container faq-grid">
+          <div class="faq-heading reveal">
+            <p class="eyebrow"><span></span> Tez-tez verilən suallar</p>
+            <h2 id="faq-title">Sualınız qalmasın.</h2>
+            <p>İlkin məlumatları burada tapa, vəziyyətinizə uyğun cavab üçün bizimlə danışa bilərsiniz.</p>
+            <button class="text-button" type="button" data-open-consultation>
+              Başqa sualım var <span aria-hidden="true">→</span>
+            </button>
+          </div>
+
+          <div class="accordion" data-accordion>
+            <article class="accordion-item reveal">
+              <h3>
+                <button type="button" aria-expanded="false" aria-controls="faq-1" id="faq-button-1">
+                  Çində bakalavr üçün necə müraciət edilir?<span aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="accordion-panel" id="faq-1" role="region" aria-labelledby="faq-button-1" hidden>
+                <p>İxtisas və universitet seçildikdən sonra akademik sənədlər hazırlanır, proqramın rəsmi platformasında müraciət tamamlanır və nəticə izlənilir.</p>
+              </div>
+            </article>
+            <article class="accordion-item reveal">
+              <h3>
+                <button type="button" aria-expanded="false" aria-controls="faq-2" id="faq-button-2">
+                  Magistr proqramlarına müraciət üçün nə lazımdır?<span aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="accordion-panel" id="faq-2" role="region" aria-labelledby="faq-button-2" hidden>
+                <p>Tələblər proqrama görə dəyişir. Adətən diplom və transkript, dil sənədi, motivasiya məktubu, tövsiyələr və şəxsiyyət sənədləri tələb olunur.</p>
+              </div>
+            </article>
+            <article class="accordion-item reveal">
+              <h3>
+                <button type="button" aria-expanded="false" aria-controls="faq-3" id="faq-button-3">
+                  Təqaüd almaq mümkündür?<span aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="accordion-panel" id="faq-3" role="region" aria-labelledby="faq-button-3" hidden>
+                <p>Bəli, uyğun profillər üçün müxtəlif imkanlar mövcud ola bilər. Seçim akademik nəticələrə, dil səviyyəsinə, proqrama və müraciət müddətinə əsaslanır; nəticəyə zəmanət verilmir.</p>
+              </div>
+            </article>
+            <article class="accordion-item reveal">
+              <h3>
+                <button type="button" aria-expanded="false" aria-controls="faq-4" id="faq-button-4">
+                  Çin dili bilmədən müraciət etmək olar?<span aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="accordion-panel" id="faq-4" role="region" aria-labelledby="faq-button-4" hidden>
+                <p>İngilis dilində tədris olunan proqramlara Çin dili olmadan müraciət etmək mümkündür. Dil tələbi universitet və proqram üzrə ayrıca yoxlanılır.</p>
+              </div>
+            </article>
+            <article class="accordion-item reveal">
+              <h3>
+                <button type="button" aria-expanded="false" aria-controls="faq-5" id="faq-button-5">
+                  IELTS tələb olunur?<span aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="accordion-panel" id="faq-5" role="region" aria-labelledby="faq-button-5" hidden>
+                <p>Bəzi proqramlarda IELTS və ya başqa dil sübutu tələb olunur, bəzilərində alternativ sənədlər qəbul edilə bilər. Dəqiq tələb seçilən proqrama görə müəyyənləşir.</p>
+              </div>
+            </article>
+            <article class="accordion-item reveal">
+              <h3>
+                <button type="button" aria-expanded="false" aria-controls="faq-6" id="faq-button-6">
+                  Qəbul prosesi nə qədər çəkir?<span aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="accordion-panel" id="faq-6" role="region" aria-labelledby="faq-button-6" hidden>
+                <p>Müddət universitetə və müraciət dövrünə görə dəyişir. Erkən başlamaq sənədlərin daha diqqətli hazırlanmasına imkan verir.</p>
+              </div>
+            </article>
+            <article class="accordion-item reveal">
+              <h3>
+                <button type="button" aria-expanded="false" aria-controls="faq-7" id="faq-button-7">
+                  Hansı sənədlər lazımdır?<span aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="accordion-panel" id="faq-7" role="region" aria-labelledby="faq-button-7" hidden>
+                <p>Əsas siyahıya şəxsiyyət sənədi, akademik sənədlər, foto, dil sənədi və proqramdan asılı əlavə materiallar daxil ola bilər.</p>
+              </div>
+            </article>
+            <article class="accordion-item reveal">
+              <h3>
+                <button type="button" aria-expanded="false" aria-controls="faq-8" id="faq-button-8">
+                  Konsultasiya necə keçirilir?<span aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="accordion-panel" id="faq-8" role="region" aria-labelledby="faq-button-8" hidden>
+                <p>Qısa ilkin məlumatdan sonra məqsədiniz, təhsil tarixçəniz və suallarınız müzakirə olunur; sizə uyğun növbəti addımlar müəyyənləşdirilir.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta" aria-labelledby="cta-title">
+        <div class="cta-symbol" aria-hidden="true">中</div>
+        <div class="container cta-inner reveal">
+          <p class="eyebrow light"><span></span> İlk addım</p>
+          <h2 id="cta-title">Çində təhsil planını birlikdə quraq.</h2>
+          <p>Profilinizi qısa təqdim edin, ilkin konsultasiyada uyğun istiqamətləri danışaq.</p>
+          <div class="cta-actions">
+            <button class="button button-light" type="button" data-open-consultation>
+              Pulsuz konsultasiya al
+              <svg aria-hidden="true" viewBox="0 0 20 20"><path d="m7 4 6 6-6 6" /></svg>
+            </button>
+            <a class="whatsapp-link" data-whatsapp data-requires-whatsapp hidden>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 11.6a8 8 0 0 1-11.8 7l-4.2 1 1.1-4A8 8 0 1 1 20 11.6Z" /><path d="M9 8.5c.3 2.6 2 4.3 4.6 5.2l1.1-1.1c.2-.2.4-.2.7-.1l2 .9" /></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand brand-light" href="#top" aria-label="Çində Təhsil — yuxarı qayıt">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M13 15.5 24 9l11 6.5v13L24 35l-11-6.5z" /><path d="M18.2 20.3 24 17l5.8 3.3v6.6L24 30.2l-5.8-3.3z" /></svg>
+            </span>
+            <span class="brand-copy"><strong>Çində Təhsil</strong><small>Education consulting</small></span>
+          </a>
+          <p>Azərbaycandan Çinə ali təhsil müraciətlərində fərdi və şəffaf istiqamət.</p>
+        </div>
+
+        <div class="footer-column">
+          <h2>Naviqasiya</h2>
+          <a href="#services">Xidmətlər</a>
+          <a href="#scholarships">Təqaüdlər</a>
+          <a href="#universities">Universitetlər</a>
+          <a href="#process">Qəbul prosesi</a>
+        </div>
+        <div class="footer-column">
+          <h2>Məlumat</h2>
+          <a href="#about">Haqqımızda</a>
+          <a href="#faq">FAQ</a>
+          <button type="button" data-open-consultation>Müraciət forması</button>
+        </div>
+        <div class="footer-column footer-contact" data-contact-column hidden>
+          <h2>Əlaqə</h2>
+          <a data-instagram hidden>Instagram</a>
+          <a data-whatsapp data-requires-whatsapp hidden>WhatsApp</a>
+          <a data-email hidden></a>
+          <span data-address hidden></span>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span data-current-year></span> Çində Təhsil. Bütün hüquqlar qorunur.</p>
+        <a href="#top">Yuxarı qayıt <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
+
+    <a
+      class="floating-whatsapp"
+      data-whatsapp
+      data-requires-whatsapp
+      hidden
+      aria-label="WhatsApp ilə əlaqə"
+    >
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 11.6a8 8 0 0 1-11.8 7l-4.2 1 1.1-4A8 8 0 1 1 20 11.6Z" /><path d="M9 8.5c.3 2.6 2 4.3 4.6 5.2l1.1-1.1c.2-.2.4-.2.7-.1l2 .9" /></svg>
+    </a>
+
+    <dialog class="consultation-dialog" data-consultation-dialog aria-labelledby="consultation-title">
+      <div class="dialog-shell">
+        <div class="dialog-aside">
+          <button class="dialog-close dialog-close-mobile" type="button" data-close-consultation aria-label="Formanı bağla">
+            <span aria-hidden="true">×</span>
+          </button>
+          <span class="dialog-number">01 / 01</span>
+          <div>
+            <p class="eyebrow light"><span></span> Pulsuz konsultasiya</p>
+            <h2 id="consultation-title">Planınıza haradan başlayacağınızı müəyyənləşdirək.</h2>
+          </div>
+          <p>Formanı doldurun. Göndəriş kanalı aktiv olduqda komanda sizinlə əlaqə saxlayacaq.</p>
+        </div>
+
+        <div class="dialog-content">
+          <button class="dialog-close" type="button" data-close-consultation aria-label="Formanı bağla">
+            <span aria-hidden="true">×</span>
+          </button>
+          <form class="consultation-form" data-consultation-form novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="full-name">Ad və soyad <span>*</span></label>
+                <input id="full-name" name="fullName" type="text" autocomplete="name" required minlength="3" placeholder="Adınızı daxil edin" aria-describedby="full-name-error" />
+                <small class="field-error" id="full-name-error" data-error-for="full-name"></small>
+              </div>
+              <div class="field">
+                <label for="phone">Telefon / WhatsApp <span>*</span></label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="+994 50 000 00 00" aria-describedby="phone-error" />
+                <small class="field-error" id="phone-error" data-error-for="phone"></small>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="ad@domain.az" aria-describedby="email-error" />
+                <small class="field-error" id="email-error" data-error-for="email"></small>
+              </div>
+              <div class="field">
+                <label for="level">Təhsil səviyyəsi <span>*</span></label>
+                <select id="level" name="level" required aria-describedby="level-error">
+                  <option value="">Seçin</option>
+                  <option value="Bakalavr">Bakalavr</option>
+                  <option value="Magistr">Magistr</option>
+                  <option value="PhD">PhD</option>
+                </select>
+                <small class="field-error" id="level-error" data-error-for="level"></small>
+              </div>
+              <div class="field field-full">
+                <label for="field-of-study">Maraqlandığınız sahə <span>*</span></label>
+                <input id="field-of-study" name="fieldOfStudy" type="text" required placeholder="Məsələn: Kompüter elmləri" aria-describedby="field-of-study-error" />
+                <small class="field-error" id="field-of-study-error" data-error-for="field-of-study"></small>
+              </div>
+              <fieldset class="field field-full radio-field" aria-describedby="scholarship-error">
+                <legend>Təqaüd istəyirsiniz? <span>*</span></legend>
+                <div class="radio-options">
+                  <label><input type="radio" name="scholarship" value="Bəli" required /><span>Bəli</span></label>
+                  <label><input type="radio" name="scholarship" value="Xeyr" /><span>Xeyr</span></label>
+                  <label><input type="radio" name="scholarship" value="Bilmirəm" /><span>Bilmirəm</span></label>
+                </div>
+                <small class="field-error" id="scholarship-error" data-error-for="scholarship"></small>
+              </fieldset>
+              <div class="field field-full">
+                <label for="message">Əlavə qeyd <small>(istəyə bağlı)</small></label>
+                <textarea id="message" name="message" rows="3" placeholder="Sualınızı və ya məqsədinizi qısa yazın" aria-describedby="message-error"></textarea>
+                <small class="field-error" id="message-error" data-error-for="message"></small>
+              </div>
+            </div>
+            <div class="form-footer">
+              <p>Məlumatlarınız yalnız müraciətinizə cavab vermək üçün istifadə olunacaq.</p>
+              <button class="button submit-button" type="submit">
+                <span>Müraciət göndər</span>
+                <svg aria-hidden="true" viewBox="0 0 20 20"><path d="m7 4 6 6-6 6" /></svg>
+              </button>
+            </div>
+            <div class="form-status" role="status" aria-live="polite" data-form-status hidden></div>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+  </body>
+</html>
