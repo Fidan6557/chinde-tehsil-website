@@ -31,3 +31,7 @@ WhatsApp controls and empty footer fields stay hidden until real values are supp
 - Real student acceptance results or letters with publication consent
 - Verified university catalog data
 - Production domain for the canonical URL and absolute Open Graph image URL
+
+## Image credit
+
+The hero uses a real photograph of Peking University by Bangyu Wang, sourced from [Unsplash](https://unsplash.com/photos/a-man-riding-a-bike-down-a-tree-lined-street-xVxya6wkwwE) under the Unsplash License. The university is shown as an editorial campus example and is not presented as an official partner.

@@ -22,8 +22,8 @@
   --radius-md: 0.875rem;
   --radius-lg: 1.5rem;
   --shadow-soft: 0 20px 60px rgba(6, 23, 44, 0.12);
-  --font-display: "DM Serif Display", Georgia, serif;
-  --font-body: "Manrope", "Segoe UI", sans-serif;
+  --font-display: "Noto Serif", Georgia, serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", sans-serif;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -182,8 +182,8 @@ ol {
 .brand-copy strong {
   font-family: var(--font-display);
   font-size: 1.25rem;
-  font-weight: 400;
-  letter-spacing: 0.01em;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 .brand-copy small {
@@ -368,19 +368,20 @@ ol {
 .final-cta h2,
 .dialog-aside h2 {
   font-family: var(--font-display);
-  font-weight: 400;
-  line-height: 0.98;
-  letter-spacing: -0.035em;
+  font-weight: 600;
+  line-height: 1.02;
+  letter-spacing: -0.045em;
 }
 
 .hero h1 {
   max-width: 10ch;
   margin-bottom: 1.6rem;
-  font-size: clamp(3.6rem, 5.9vw, 6rem);
+  font-size: clamp(3.4rem, 5.35vw, 5.45rem);
 }
 
 .hero h1 em {
   color: var(--red-600);
+  font-style: normal;
   font-weight: inherit;
 }
 
@@ -485,22 +486,27 @@ ol {
   left: 1.4rem;
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: flex-start;
   color: var(--white);
 }
 
-.image-caption span {
-  color: #e9c58f;
-  font-size: 0.67rem;
-  letter-spacing: 0.12em;
+.image-caption a {
+  display: grid;
+  gap: 0.15rem;
+  text-transform: uppercase;
 }
 
-.image-caption p {
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: clamp(1.15rem, 2vw, 1.5rem);
-  line-height: 1.15;
-  text-align: right;
+.image-caption a strong {
+  color: var(--white);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+}
+
+.image-caption a span {
+  color: #e9c58f;
+  font-size: 0.56rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
 }
 
 .hero-plan {
@@ -594,7 +600,7 @@ ol {
   color: #e7be7e;
   font-family: var(--font-display);
   font-size: 1.1rem;
-  font-weight: 400;
+  font-weight: 600;
   text-align: left;
 }
 
@@ -673,7 +679,7 @@ ol {
   margin-bottom: 0.75rem;
   font-family: var(--font-display);
   font-size: 1.75rem;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.1;
 }
 
@@ -743,7 +749,7 @@ ol {
   margin: 0;
   font-family: var(--font-display);
   font-size: clamp(1.6rem, 2.7vw, 2.15rem);
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.1;
 }
 
@@ -788,9 +794,9 @@ ol {
   margin-bottom: 1.5rem;
   font-family: var(--font-display);
   font-size: clamp(2.8rem, 5vw, 4.8rem);
-  font-weight: 400;
-  line-height: 0.98;
-  letter-spacing: -0.035em;
+  font-weight: 600;
+  line-height: 1.02;
+  letter-spacing: -0.045em;
 }
 
 .scholarship-copy > p:not(.eyebrow) {
@@ -824,7 +830,7 @@ ol {
   margin-bottom: 0.5rem;
   font-family: var(--font-display);
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.1;
 }
 
@@ -973,7 +979,7 @@ ol {
   margin-bottom: 2rem;
   font-family: var(--font-display);
   font-size: clamp(2rem, 3vw, 2.7rem);
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.05;
 }
 
@@ -1081,7 +1087,7 @@ ol {
   margin-bottom: 0.6rem;
   font-family: var(--font-display);
   font-size: 1.55rem;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.1;
 }
 
@@ -1127,6 +1133,7 @@ ol {
   margin-bottom: 1.5rem;
   font-family: var(--font-display);
   font-size: clamp(1.5rem, 2.6vw, 2.2rem);
+  font-weight: 500;
   line-height: 1.25;
 }
 
@@ -1218,6 +1225,7 @@ ol {
   cursor: pointer;
   font-family: var(--font-display);
   font-size: clamp(1.1rem, 2vw, 1.42rem);
+  font-weight: 600;
   line-height: 1.25;
   text-align: left;
 }
@@ -1865,7 +1873,7 @@ ol {
 
   .hero h1 {
     max-width: 12ch;
-    font-size: clamp(3.8rem, 10vw, 5.6rem);
+    font-size: clamp(3.5rem, 9vw, 5rem);
   }
 
   .hero-lead {
@@ -1985,7 +1993,7 @@ ol {
 
   .hero h1 {
     max-width: 10ch;
-    font-size: clamp(3.15rem, 15vw, 4.3rem);
+    font-size: clamp(2.85rem, 13vw, 3.8rem);
   }
 
   .hero-actions {
@@ -2288,7 +2296,7 @@ ol {
 
 @media (max-width: 390px) {
   .hero h1 {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 
   .hero-proof {
